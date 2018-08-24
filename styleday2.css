@@ -1,0 +1,13 @@
+body
+{
+	background: lightgrey;
+	font-family: "Sans-serif";
+        margin-left: 300px;
+}
+
+blockquote
+{
+	border: 2px solid white;
+	text-align: center;
+	margin-left: 0;
+}
