@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="secondwebtry.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 
 	<title>My web page</title>
 </head>
@@ -12,12 +14,18 @@
 	<header class="top-nav">
 	<img class="resize" src="image/lenovo_logo.jpg" alt="logo"/>
 	<section class="top_navflex">
+	<input type="checkbox" id="nav-toggle" class="nav-toggle">
+	<nav>
 	<ul>
 	  <li><a href="#">Home</a></li>
 	  <li><a href="#">News</a></li>
 	  <li><a href="#">Contact</a></li>
 	  <li><a href="#">About</a></li>
 	</ul>
+	</nav>
+	<label for="nav-toggle" class="nav-toggle-label">
+		<span></span>
+	</label>
 	</section>
 
 	</header>
@@ -26,19 +34,19 @@
 	<div class="img_container">
 
 		<div class="hero_text">
-		<h2>THIS IS NOT A LAPTOP.IT'S A</h2>
-			<h1>THINKPAD</h1>
-			<p>LAPTOPS FAIL EVERY NOW AND THEN.GOOD THING WE DON'T MAKE LAPTOPS.AVAILABLE<br> WITH PREMEIR SUPPORT.</p>
-			<a class="btn" href="#"> BUY NOW</a>
+		<h2>THIS IS NOT A LAPTOP.<br>
+		IT'S A <div id="think">THINKPAD</div></h2>
+		
+			<p>LAPTOPS FAIL EVERY NOW AND THEN.<br>
+			   GOOD THING WE DON'T MAKE LAPTOPS.</p>
+			<a id="btn" href="#"> Learn More</a>
 			</div>
 			</div>
 	<section class="flexcontainer">
 		<section class="column">
-			<h3>Why thinkpad</h3>
+			<h3>Why thinkpad?</h3>
 		
-			<p>For many business users and corporate IT departments, nothing but a Lenovo ThinkPad laptop will do. Whether it's their strong build quality, industry-leading keyboards, hyper accurate pointing sticks, or simple black aesthetic, the ThinkPad line has a number of mainstays that Lenovo fans won't do without.
-
-			Even if you've already got your heart and your budget committed to a ThinkPad, you've got a lot of choices. Lenovo currently sells over 20 ThinkPad models across 9 different lines. The laptops all have the same basic aesthetic, but vary greatly when it comes to size, price, screen quality, performance and battery life. Some even have snappier keyboards than others. So which ThinkPad is right for you? The answer depends on your priorities.
+			<p>For many business users and corporate IT departments, nothing but a Lenovo ThinkPad laptop will do. Whether it's their strong build quality, industry-leading keyboards, hyper accurate pointing sticks, or simple black aesthetic, the ThinkPad line has a number of mainstays that Lenovo fans won't do without.<br>Even if you've already got your heart and your budget committed to a ThinkPad, you've got a lot of choices. Lenovo currently sells over 20 ThinkPad models across 9 different lines. The laptops all have the same basic aesthetic, but vary greatly when it comes to size, price, screen quality, performance and battery life. Some even have snappier keyboards than others. 
 			</p>
 			<img class="fleximage" src="image/column1.jpeg"/>
 		</section>
@@ -53,7 +61,7 @@
 
 		<section class="column">
 			<h3>Best 2-in-1 Options</h3>
-			<p>Lenovo makes several different ThinkPad models which have the brand's Yoga, bend-back functionality. Of these, the 14-inch ThinkPad X1 Yoga stands head and shoulders above the rest, because it combines light weight with solid battery life and a gorgeous display that can show over 100 percent of the sRGB color gamut.
+			<p>Lenovo makes several different ThinkPad models which have the brand's Yoga, bend-back functionality. Of these, the 14-inch ThinkPad X1 Yoga stands head and shoulders above the rest, because it combines light weight with solid battery life 
 			</p>
 			<img class="fleximage" src ="image/column3.jpeg"/>
 		</section>
@@ -90,11 +98,15 @@
 		</section>
 	</section>
 
-	<footer id="links">
+	<footer class="links">
+		<a  class="footer_text" href="#">Products and services</a>
+		<a class="footer_text" href="#">Customer support</a>
+		<a class="footer_text" href="#">Resources</a>
+		<section class="icons">
 		<i class="fab fa-facebook-f"></i>
 		<i class="fab fa-twitter"></i>
 		<i class="fab fa-skype"></i>
-		<i class="far fa-envelope"></i>
+		</section>
 	</footer>
 
 </body>
