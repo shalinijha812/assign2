@@ -1,0 +1,328 @@
+html{
+	margin:0;
+	height:100%;
+}
+
+body {
+	margin: 0%;
+width: 100%;
+height: 100%;
+}
+.img_container{
+	background-image: url(image/hero4.jpg);
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	
+
+
+}
+
+img.resize{
+	width:200px;
+	height: 100px;
+	}
+
+.hero_text {
+    text-align:left;
+    margin-left: 0px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    color: black;
+
+}
+h2{
+	align-items: center;
+	
+}
+
+li{
+	display:inline;
+	width:auto;
+	color:darkblue;
+	}
+
+li a:hover {
+    color:black;
+    border:lightblue;
+
+}
+li a{
+	text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.top-nav{
+	display: flex;
+	position:fixed;
+	overflow: hidden;
+	width:100%;
+	/*margin:0%;*/
+	z-index:99;
+
+}
+
+.resize{
+	flex:1;
+}
+.top_navflex{
+	flex:3;
+	text-align: right;
+	background:lightblue;
+	font-weight: bolder;
+	font-size: 2em;
+	
+	
+
+}
+.flexcontainer{
+	display:flex;
+	flex-wrap:wrap;
+	column-count: 3;
+	justify-content: space-between;
+	
+	
+	grid-column-gap:30px;
+	column-span:all;
+	height: auto;
+	align-content: flex-start;
+	margin:30px;
+}
+body{
+	background-color: lightgrey;
+}
+.fleximage{
+	width:100%;
+	height:auto;
+	padding-top: 25px;
+}
+.links{
+	background: lightblue;
+	display:flex;
+	align-items: baseline;
+	width:100%;
+	height:10%;
+	justify-content:space-between;
+	
+	}
+.links a,i{
+	text-decoration:none;
+	
+	font-weight:bold;
+	font-size: 1.5em;
+	text-align: center;
+	height:auto;
+
+}
+.fab{
+	display:flex;
+	justify-content: flex-end;
+	width: 4em;
+	padding:0;
+}
+.btn {
+	
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+	color:black;
+	width:8em;
+
+}
+.btn:hover{	
+	
+	color:rgba(0,0,255,1);
+	border: 2px white;
+
+
+
+}
+#h2{
+	font-family: sans-serif;
+	font-weight: bold;
+}
+#think{
+	font-weight: bold;
+}
+.hero_text{
+	
+	
+	text-align: center;
+	font-weight: bold;
+	
+	font-size: 1em;
+	align-self: flex-end;
+	align-items: baseline;
+	
+
+}
+
+.column{
+		
+		
+  		width: 27%;
+  		height: 100px;
+		text-align: justify;
+		height:auto;
+		font-family: 'EB Garamond', serif;
+	}
+#think{
+	font-family: serif;
+	font-weight: bolder;
+	font-size: 2em;
+}
+.nav-toggle {
+	display: none;
+}
+.footer_text {
+	height:auto;
+	
+}
+.links a {
+	color:darkblue;
+}
+.links a:hover ,i:hover{
+	color:rgba(0,0,255,1);
+
+}
+
+@media(max-width:700px)
+	{
+		.flexcontainer {
+			display:flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+
+		}
+		.fleximage{
+			display:flex;
+			justify-content: center;
+		}
+		
+		.footer_text {
+			display:flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+			flex:1;
+			justify-content: center;
+			font-weight: normal;
+			width:100%;
+			border:1px solid white;
+			overflow:hidden;
+		}
+		.links{
+			flex-direction:column;
+			background: lightblue;
+			height:auto;
+			font-size:2vw;
+		}
+		
+		
+		.icons
+		{
+			width:100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			padding-top:5px	;
+			border:1px solid white;
+		}
+		.fab{
+			width:auto;
+			margin-right:17px;
+		}
+	
+
+		.nav-toggle:checked ~ nav{
+		display:block;
+
+		}
+	.nav-toggle-label{
+		position:absolute;
+		top: 2.5em;
+		left:0;
+
+		height: 100%;
+		display:flex;
+		
+		}
+	.nav-toggle-label span,
+	.nav-toggle-label span::before,
+	.nav-toggle-label span::after{
+
+		display:block;
+		background: white;
+		height: 2px;
+		width:2em;
+		border-radius: 2px;
+		position: absolute;
+		}
+	.nav-toggle-label span::before,
+	.nav-toggle-label span::after{
+		content:'';
+		position:absolute;
+		}
+	.nav-toggle-label span::before{
+		bottom:7px;
+		}
+	.nav-toggle-label span::after{
+		top: 7px;
+		}
+	nav {
+		font-size: 0.5em;
+		font-weight: bold;
+		display:none;
+		}
+	
+	ul{
+		display:flex;
+		flex-direction: column;
+		padding: 0;
+		font-weight: normal;
+		justify-content: center;
+		margin:0;
+
+	
+	}
+	.top-nav{
+		display:flex;
+		flex-direction: column;
+		
+	}
+	img.resize{
+		display:flex;
+		width:100%;
+		
+	}
+	.resize{
+		flex:1;
+		
+	}
+	.top_navflex{
+		
+		text-align: center;
+		width:100%;
+		background-color: lightblue;
+		
+	
+	}
+	li{
+		border:1px solid white;
+		margin:0;
+	}
+	.column{
+		width:100%;
+
+	}
+	.hero_text{
+		display:flex;
+		flex-direction: column;
+		}
+
+	
+
+}
+	
