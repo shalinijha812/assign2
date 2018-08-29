@@ -1,0 +1,27 @@
+*box-sizing{
+	border-box;
+}
+
+img.resize{
+	width:200px;
+	height: 100px;
+	}
+body{
+	
+	background-color:lightgrey;
+	
+	}
+.Slideshows{
+	margin:auto;
+	postion:relative;
+	maximum width:1000px;
+	}
+.slideimage{
+	width:100%;
+	margin:auto;
+	max-width:1000px;
+}
+	
+
+
+
